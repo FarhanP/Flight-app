@@ -1,0 +1,481 @@
+{
+  "flights": [
+    {
+      "id": 1,
+      "flightCode": "FR01",
+      "flightNumber": "1001",
+      "departureDateTime": "16:00",
+      "departureStation": "Chennai",
+      "arrivalDateTime": "18:30",
+      "arrivalStation": "Delhi",
+      "Duration": "2 hrs 30 Mins",
+      "specialMeals": [
+        "Chocos",
+        "Milk",
+        "Biryani",
+        "Veg Curry"
+      ],
+      "ancillaryServices": [
+        "Extra Buggage",
+        "Leg space"
+      ],
+      "shoppingItems": [
+        "Books",
+        "Magazines"
+      ],
+      "reservedSeats": []
+    },
+    {
+      "id": 2,
+      "flightCode": "FR02",
+      "flightNumber": "1002",
+      "departureDateTime": "14:00",
+      "departureStation": "Bangalore",
+      "arrivalDateTime": "16:00",
+      "arrivalStation": "Odisha",
+      "Duration": "2 hrs",
+      "specialMeals": [
+        "briyani",
+        "Noddles",
+        "Rice",
+        "Fish",
+        "Chawal",
+        "Juuice",
+        "Chicken",
+        "Maggie",
+        "ddsd"
+      ],
+      "ancillaryServices": [
+        "Luggage",
+        "Extra space"
+      ],
+      "shoppingItems": [
+        "Toys",
+        "Magazines",
+        "NewsPapers",
+        "Wines",
+        "Groooming items"
+      ],
+      "reservedSeats": []
+    },
+    {
+      "id": 3,
+      "flightCode": "FR03",
+      "flightNumber": "1003",
+      "departureDateTime": "12.30",
+      "departureStation": "Mumbai",
+      "arrivalDateTime": "15.30",
+      "arrivalStation": "Kolkata",
+      "Duration": "3 hrs",
+      "specialMeals": [
+        "Milk",
+        "Water",
+        "juice"
+      ],
+      "ancillaryServices": [
+        "Extra leg space",
+        "Leg spaces",
+        "leg spce"
+      ],
+      "shoppingItems": [
+        "Toy",
+        "Magazines",
+        "Book"
+      ],
+      "reservedSeats": []
+    }
+  ],
+  "passengers": [
+    {
+      "id": 1,
+      "name": "Maddie",
+      "seatType": "Infant",
+      "seatNumber": "1C",
+      "flightNumber": "1001",
+      "contactNumber": "123232323232",
+      "address": "Bangalore",
+      "passport": "MAQ1001AQH",
+      "dateOfBirth": "",
+      "ancillaryServices": [
+        "Extra space",
+        "Luggage",
+        "Extra baggage",
+        "Extrz",
+        "No more",
+        "Extra luggage"
+      ],
+      "specialMeals": false,
+      "shoppingItems": [
+        "banana",
+        "Magazines"
+      ],
+      "checkedIn": false,
+      "infant": false,
+      "wheelChair": false
+    },
+    {
+      "id": 2,
+      "name": "fouzan",
+      "seatType": "Wheelchair",
+      "seatNumber": "3A",
+      "flightNumber": "1001",
+      "contactNumber": "123232323232",
+      "address": "Chennai",
+      "passport": "FAZ10sdsd",
+      "dateOfBirth": "1993/03/12",
+      "ancillaryServices": [
+        "Luggages",
+        "Hey"
+      ],
+      "specialMeals": false,
+      "shoppingItems": [],
+      "checkedIn": false,
+      "infant": false,
+      "wheelChair": false
+    },
+    {
+      "id": 3,
+      "name": "Nisar",
+      "seatType": "Infant",
+      "seatNumber": "2A",
+      "flightNumber": "1003",
+      "contactNumber": "34343434343",
+      "address": "Bengaluru",
+      "passport": "NISA00101",
+      "dateOfBirth": "1956/03/12",
+      "ancillaryServices": [
+        "Extra space",
+        "Luggage",
+        "space"
+      ],
+      "specialMeals": true,
+      "shoppingItems": [
+        "Magazine"
+      ],
+      "checkedIn": true,
+      "infant": false,
+      "wheelChair": false
+    },
+    {
+      "name": "Karimulahh",
+      "passport": "KAR1001",
+      "address": "Hyderabad",
+      "seatType": "infant",
+      "seatNumber": "1A",
+      "dateOfBirth": "1996/03/12",
+      "flightNumber": "1002",
+      "contactNumber": "7418528365",
+      "ancillaryServices": [
+        "Luggagesss",
+        "Leg space"
+      ],
+      "specialMeals": true,
+      "shoppingItems": [],
+      "checkedIn": true,
+      "infant": false,
+      "wheelChair": false,
+      "id": 4
+    },
+    {
+      "name": "Uzair",
+      "passport": "KAR1001",
+      "address": "",
+      "seatType": "WheelChair",
+      "seatNumber": "3A",
+      "flightNumber": "1002",
+      "contactNumber": "6383136311",
+      "dateOfBirth": "",
+      "ancillaryServices": [
+        "Extra space",
+        "Luggage",
+        "Leg space"
+      ],
+      "specialMeals": true,
+      "shoppingItems": [],
+      "checkedIn": true,
+      "id": 5,
+      "infant": false,
+      "wheelChair": false
+    },
+    {
+      "name": "Farhan",
+      "passport": "Far1002",
+      "address": "Chennai",
+      "seatType": "infant",
+      "seatNumber": "4A",
+      "flightNumber": "1003",
+      "contactNumber": "6383136311",
+      "dateOfBirth": "1995/06/11",
+      "ancillaryServices": [
+        "Extra space",
+        "Luggage",
+        "Space"
+      ],
+      "specialMeals": true,
+      "shoppingItems": [],
+      "checkedIn": false,
+      "id": 6,
+      "infant": false,
+      "wheelChair": false
+    },
+    {
+      "name": "Aejaz",
+      "passport": "AE10003",
+      "address": "VNB",
+      "seatType": "WheelChair",
+      "seatNumber": "3A",
+      "flightNumber": "1003",
+      "contactNumber": "7418528365",
+      "dateOfBirth": "1996/07/06",
+      "ancillaryServices": [
+        "Wheelchair"
+      ],
+      "specialMeals": true,
+      "shoppingItems": [],
+      "checkedIn": false,
+      "id": 7,
+      "infant": false,
+      "wheelChair": false
+    },
+    {
+      "name": "Hannan",
+      "passport": "223232",
+      "address": "Bangalore",
+      "seatType": "WheelChair",
+      "seatNumber": "2B",
+      "flightNumber": "1003",
+      "contactNumber": "6383136311",
+      "dateOfBirth": "1997/08/20",
+      "ancillaryServices": [],
+      "specialMeals": true,
+      "shoppingItems": [],
+      "checkedIn": true,
+      "id": 8,
+      "infant": false,
+      "wheelChair": false
+    },
+    {
+      "name": "Tezi",
+      "passport": "223232",
+      "address": "Bangalore",
+      "seatType": "WheelChair",
+      "seatNumber": "1D",
+      "flightNumber": "1003",
+      "contactNumber": "636311",
+      "dateOfBirth": "1997/08/20",
+      "ancillaryServices": [],
+      "specialMeals": true,
+      "shoppingItems": [],
+      "checkedIn": true,
+      "id": 9,
+      "infant": false,
+      "wheelChair": false
+    },
+    {
+      "name": "Hike",
+      "passport": "223232",
+      "address": "Bangalore",
+      "seatType": "WheelChair",
+      "seatNumber": "4A",
+      "flightNumber": "1002",
+      "contactNumber": "636311",
+      "dateOfBirth": "1997/08/20",
+      "ancillaryServices": [],
+      "specialMeals": true,
+      "shoppingItems": [],
+      "checkedIn": true,
+      "id": 10,
+      "infant": false,
+      "wheelChair": false
+    },
+    {
+      "name": "Yqkw",
+      "passport": "223232",
+      "address": "Bangalore",
+      "seatType": "WheelChair",
+      "seatNumber": "1C",
+      "flightNumber": "1002",
+      "contactNumber": "636311",
+      "dateOfBirth": "1997/08/20",
+      "ancillaryServices": [],
+      "specialMeals": false,
+      "shoppingItems": [],
+      "checkedIn": false,
+      "id": 11,
+      "infant": false,
+      "wheelChair": false
+    },
+    {
+      "name": "Hikes",
+      "seatType": "",
+      "seatNumber": "5A",
+      "flightNumber": "1003",
+      "ancillaryServices": [
+        "More space"
+      ],
+      "specialMeals": true,
+      "shoppingItems": [],
+      "checkedIn": true,
+      "id": 12,
+      "passport": "11221",
+      "infant": false,
+      "wheelChair": false
+    },
+    {
+      "name": "Tezi",
+      "passport": "KAR1001",
+      "address": "",
+      "seatType": "1D",
+      "seatNumber": "4C",
+      "flightNumber": "1002",
+      "ancillaryServices": [],
+      "specialMeals": [],
+      "shoppingItems": [],
+      "checkedIn": false,
+      "id": 13,
+      "infant": false,
+      "wheelChair": false
+    },
+    {
+      "name": "Goku",
+      "passport": "",
+      "address": "Earth",
+      "seatType": "",
+      "seatNumber": "7E",
+      "flightNumber": "1002",
+      "ancillaryServices": [],
+      "specialMeals": true,
+      "shoppingItems": [],
+      "checkedIn": false,
+      "id": 15,
+      "infant": false,
+      "wheelChair": false
+    },
+    {
+      "name": "Nahrafa",
+      "passport": "",
+      "address": "",
+      "seatType": "",
+      "seatNumber": "1B",
+      "flightNumber": "1001",
+      "dateOfBirth": "",
+      "ancillaryServices": [
+        "Leg space"
+      ],
+      "specialMeals": true,
+      "shoppingItems": [],
+      "checkedIn": true,
+      "id": 16,
+      "infant": false,
+      "wheelChair": false
+    },
+    {
+      "name": "hiejiejejr",
+      "passport": "",
+      "address": "",
+      "seatType": "",
+      "seatNumber": "7E",
+      "flightNumber": "1003",
+      "dateOfBirth": "",
+      "ancillaryServices": [],
+      "specialMeals": false,
+      "shoppingItems": [],
+      "checkedIn": false,
+      "id": 17,
+      "infant": false,
+      "wheelChair": true
+    },
+    {
+      "name": "Willy Doo",
+      "passport": "KAR1001",
+      "address": "",
+      "seatType": "",
+      "seatNumber": "10A",
+      "flightNumber": "1001",
+      "contactNumber": "qwqw",
+      "dateOfBirth": "",
+      "ancillaryServices": [
+        "Big fat space",
+        "Leg space"
+      ],
+      "specialMeals": true,
+      "shoppingItems": [
+        "Banana"
+      ],
+      "checkedIn": true,
+      "id": 18,
+      "infant": true,
+      "wheelChair": false
+    },
+    {
+      "name": "Sharath Kumar",
+      "passport": "",
+      "address": "",
+      "seatType": "1B",
+      "seatNumber": "1A",
+      "flightNumber": "1002",
+      "dateOfBirth": "",
+      "ancillaryServices": [
+        "Luggage"
+      ],
+      "specialMeals": true,
+      "shoppingItems": [],
+      "checkedIn": true,
+      "id": 19,
+      "infant": false,
+      "wheelChair": false
+    },
+    {
+      "name": "Ramya",
+      "passport": "",
+      "address": "",
+      "seatType": "",
+      "seatNumber": "1D",
+      "flightNumber": "1002",
+      "dateOfBirth": "",
+      "ancillaryServices": [],
+      "specialMeals": false,
+      "shoppingItems": [],
+      "checkedIn": true,
+      "id": 20,
+      "infant": false,
+      "wheelChair": true
+    },
+    {
+      "name": "Saif",
+      "passport": "",
+      "address": "",
+      "seatType": "",
+      "seatNumber": "5A",
+      "flightNumber": "1001",
+      "dateOfBirth": "",
+      "ancillaryServices": [
+        "Leg space"
+      ],
+      "specialMeals": true,
+      "shoppingItems": [
+        "Magazines"
+      ],
+      "checkedIn": false,
+      "id": 21,
+      "infant": false,
+      "wheelChair": true
+    },
+    {
+      "name": "Test",
+      "passport": "",
+      "address": "",
+      "seatType": "",
+      "seatNumber": "1A",
+      "flightNumber": "1001",
+      "dateOfBirth": "",
+      "ancillaryServices": [],
+      "specialMeals": false,
+      "shoppingItems": [],
+      "checkedIn": false,
+      "infant": false,
+      "wheelChair": false,
+      "id": 22
+    }
+  ]
+}
