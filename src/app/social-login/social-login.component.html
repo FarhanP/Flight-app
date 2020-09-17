@@ -1,0 +1,9 @@
+<button type="button" (click)="signInWithGoogle()" *ngIf="loggedIn === false; else logout" mat-raised-button color="accent">
+  Sign In
+</button>
+
+<ng-template #logout>
+    <button type="button" (click)="signOut()" mat-raised-button color="accent">
+    Logout
+  </button>
+</ng-template>

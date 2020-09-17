@@ -1,0 +1,29 @@
+.login {
+	text-align: center;
+}
+
+.header {
+	font-size: 50px;
+	font-weight: 100;
+}
+
+.plane {
+	margin-bottom: 5%;
+	margin-top: 8%;
+	width: 80px;
+}
+
+.welcome {
+	color: #100000;
+	text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+	.welcome {
+		margin-top: 30%;
+	}
+
+	.header {
+		font-size: 25px;
+	}
+}

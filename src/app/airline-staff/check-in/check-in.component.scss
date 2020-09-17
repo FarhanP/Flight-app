@@ -1,0 +1,119 @@
+$primary-white-color: hsl(0, 0%, 100%);
+$primary-black-color: hsl(0, 0%, 0%);
+
+table {
+	width: 100%;
+}
+
+.mat-form-field {
+	float: left;
+	font-size: 14px;
+}
+
+.mat-elevation-z8 {
+	width: 100%;
+}
+
+td,
+th {
+	width: 11%;
+}
+
+th {
+	color: $primary-black-color;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+button {
+	float: left;
+	margin-top: 5px;
+}
+
+.seat-layout {
+	margin: 15px;
+
+	.seat-box {
+		height: 20px;
+		width: 20px;
+	}
+
+	.checked-in {
+		background-color: #ffb6c1;
+		border: 2px solid hsl(0, 100%, 50%);
+	}
+
+	.booked {
+		background-color: rgb(255, 182, 193);
+		border: 1px solid hsl(0, 100%, 50%);
+	}
+
+	.wheel-chair {
+		border: 2px solid hsl(240, 100%, 27%);
+		border-radius: 15%;
+	}
+
+	.infant {
+		border: 2px solid hsl(0, 59%, 41%);
+		border-radius: 15%;
+	}
+
+	.available {
+		background-color: hsl(120, 73%, 75%);
+		border: 1px solid hsl(120, 100%, 20%);
+	}
+
+	.midline {
+		background-color: hsl(240, 100%, 50%);
+		z-index: -1;
+	}
+}
+
+.add-update-btn {
+	display: none;
+}
+
+.mat-raised-button {
+	background-color: $primary-white-color;
+	color: $primary-black-color;
+}
+
+.mat-raised-button:hover {
+	background-color: $primary-black-color;
+	color: $primary-white-color;
+}
+
+.mat-stroked-button {
+	background-color: $primary-black-color;
+	color: $primary-white-color;
+}
+
+.mat-stroked-button:hover {
+	background-color: $primary-white-color;
+	color: $primary-black-color;
+}
+
+.row {
+	margin: 18px;
+}
+
+.filter {
+	margin: 20px;
+	text-align: center;
+}
+
+.filter-btn {
+	background-color: $primary-black-color;
+	margin: 5px;
+}
+
+.back {
+	background-color: hsl(16, 100%, 50%);
+	color: $primary-white-color;
+	margin-left: 75%;
+}
+
+.back:hover {
+	background-color: hsl(16, 100%, 50%);
+	color: $primary-white-color;
+}

@@ -1,0 +1,7 @@
+$primary-white-color: hsl(0, 0%, 100%);
+$primary-black-color: hsl(0, 0%, 0%);
+
+.mat-raised-button {
+	background-color: $primary-white-color;
+	color: $primary-black-color;
+}

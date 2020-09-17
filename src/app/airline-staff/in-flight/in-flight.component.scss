@@ -1,0 +1,126 @@
+$primary-white-color: hsl(0, 0%, 100%);
+$primary-black-color: hsl(0, 0%, 0%);
+
+table {
+	width: 100%;
+}
+
+.mat-form-field {
+	float: left;
+	font-size: 14px;
+}
+
+.mat-elevation-z8 {
+	width: 100%;
+}
+
+td,
+th {
+	width: 20px;
+}
+
+th {
+	color: $primary-black-color;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+button {
+	float: left;
+	margin-top: 2px;
+}
+
+.add-update-btn {
+	display: none;
+}
+
+.mat-stroked-button {
+	margin: 2px;
+}
+
+.row {
+	margin: 15px;
+}
+
+.filter-field {
+	margin-left: 10px;
+}
+
+.reset-btn {
+	margin-left: 8px;
+}
+
+.seat-layout {
+	margin: 15px;
+
+	.seat-box {
+		height: 18px;
+		width: 18px;
+	}
+
+	.special-meals {
+		border: 2px hsl(280, 61%, 50%) solid;
+	}
+
+	.available {
+		background-color: hsl(120, 73%, 75%);
+		border: 1px solid hsl(120, 100%, 20%);
+	}
+
+	.midline {
+		background-color: hsl(240, 100%, 50%);
+		z-index: -1;
+	}
+}
+
+.table-footer {
+	display: flex;
+	justify-content: center;
+	margin: 16px;
+	padding: 10px;
+
+	.table-footer-meals {
+		border: 2px hsl(280, 61%, 50%) solid;
+		padding: 8px;
+	}
+
+	.table-span-meals {
+		padding-left: 10px;
+	}
+}
+
+.mat-raised-button {
+	background-color: $primary-white-color;
+	color: $primary-black-color;
+}
+
+.mat-raised-button:hover {
+	background-color: $primary-black-color;
+	color: $primary-white-color;
+}
+
+.mat-stroked-button {
+	background-color: $primary-black-color;
+	color: $primary-white-color;
+}
+
+.mat-stroked-button:hover {
+	background-color: $primary-white-color;
+	color: $primary-black-color;
+}
+
+.meals {
+	height: 100%;
+	width: 100%;
+}
+
+.back {
+	background-color: hsl(16, 100%, 50%);
+	color: $primary-white-color;
+	margin-left: 94%;
+}
+
+.back:hover {
+	background-color: hsl(16, 100%, 50%);
+	color: $primary-white-color;
+}

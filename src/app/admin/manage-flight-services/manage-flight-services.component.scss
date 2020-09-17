@@ -1,0 +1,36 @@
+$primary-white-color: hsl(0, 0%, 100%);
+$primary-black-color: hsl(0, 0%, 0%);
+
+table {
+	width: 100%;
+}
+
+.header {
+	font-weight: bold;
+	margin-top: 5%;
+	text-align: center;
+}
+
+.edit {
+	font-size: medium;
+	font-weight: bold;
+}
+
+.add {
+	margin-bottom: 2.3%;
+	text-align: center;
+}
+
+.input-add {
+	background-color: $primary-white-color;
+	color: $primary-black-color;
+}
+
+.input-add:hover {
+	background-color: $primary-black-color;
+	color: $primary-white-color;
+}
+
+.mat-header-cell {
+	font-weight: bold;
+}

@@ -1,0 +1,12 @@
+{
+	"admin": [
+		{
+			"email": "pmdfarhan@gmail.com",
+			"isAdmin": true
+		},
+		{
+			"email": "farhantest001@gmail.com",
+			"isAdmin": false
+		}
+	]
+}

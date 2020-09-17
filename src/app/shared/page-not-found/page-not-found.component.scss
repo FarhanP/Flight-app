@@ -1,0 +1,28 @@
+.error {
+	margin: 200px;
+	text-align: center;
+}
+
+.heading {
+	animation: test;
+	animation-duration: 4s;
+	border: 2px solid hsl(0, 100%, 50%);
+	font-weight: bold;
+}
+
+@keyframes test {
+	from {
+		background-color: hsl(0, 100%, 50%);
+	}
+
+	to {
+		background-color: hsl(350, 100%, 88%);
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.error {
+		font-size: 14px;
+		margin: 50px;
+	}
+}

@@ -1,0 +1,67 @@
+$primary-white-color: hsl(0, 0%, 100%);
+$primary-black-color: hsl(0, 0%, 0%);
+
+table {
+	width: 100%;
+}
+
+.filter {
+	margin: 20px;
+	text-align: center;
+}
+
+.filter-button {
+	margin-left: 15px;
+}
+
+.add {
+	margin: 12px;
+	margin-right: 40px;
+	text-align: center;
+}
+
+.mat-raised-button {
+	background-color: $primary-white-color;
+	color: $primary-black-color;
+}
+
+.mat-raised-button:hover {
+	background-color: $primary-black-color;
+	color: $primary-white-color;
+}
+
+.filter-button {
+	background-color: $primary-white-color;
+	color: $primary-black-color;
+}
+
+.filter-button :hover {
+	background-color: $primary-black-color;
+	color: $primary-white-color;
+}
+
+.field {
+	width: 100%;
+}
+
+.button-style {
+	color: $primary-black-color;
+	margin-top: 25px;
+	width: 100%;
+}
+
+.button-style:hover {
+	background-color: $primary-black-color;
+	color: $primary-white-color;
+}
+
+.back {
+	background-color: hsl(16, 100%, 50%);
+	color: $primary-white-color;
+	margin-top: 50px;
+}
+
+.back:hover {
+	background-color: hsl(16, 100%, 50%);
+	color: $primary-white-color;
+}

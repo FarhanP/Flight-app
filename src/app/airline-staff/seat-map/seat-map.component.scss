@@ -1,0 +1,73 @@
+.seat-layout {
+	margin: 15px;
+
+	.seat-box {
+		height: 20px;
+		width: 20px;
+	}
+
+	.checked-in {
+		background-color: #ffb6c1;
+		border: 2px solid hsl(0, 100%, 50%);
+	}
+
+	.booked {
+		background-color: rgb(255, 182, 193);
+		border: 1px solid hsl(0, 100%, 50%);
+	}
+
+	.wheel-chair {
+		border: 2px solid hsl(240, 100%, 27%);
+		border-radius: 15%;
+	}
+
+	.infant {
+		border: 2px solid hsl(0, 59%, 41%);
+		border-radius: 15%;
+	}
+
+	.available {
+		background-color: hsl(120, 73%, 75%);
+		border: 1px solid hsl(120, 100%, 20%);
+	}
+
+	.midline {
+		background-color: hsl(240, 100%, 50%);
+		z-index: -1;
+	}
+}
+
+.table-footer {
+	display: flex;
+	justify-content: space-around;
+	margin: 11px;
+	padding: 10px;
+
+	.table-footer-booked {
+		background-color: hsl(351, 100%, 86%);
+		border: 2px solid hsl(0, 100%, 50%);
+		height: 20px;
+		width: 20px;
+	}
+
+	.table-footer-available {
+		background-color: hsl(120, 73%, 75%);
+		border: 1px solid hsl(120, 100%, 20%);
+		height: 20px;
+		width: 20px;
+	}
+
+	.table-footer-infant {
+		border: 2px solid hsl(0, 59%, 41%);
+		border-radius: 15%;
+		height: 20px;
+		width: 20px;
+	}
+
+	.table-footer-wheelchair {
+		border: 2px solid hsl(240, 100%, 27%);
+		border-radius: 15%;
+		height: 20px;
+		width: 20px;
+	}
+}

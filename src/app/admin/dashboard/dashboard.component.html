@@ -1,0 +1,34 @@
+<h1 class="admin-header">Dashboard</h1>
+<table class="table">
+    <thead class="thead-light">
+        <tr>
+            <th scope="col">Flight-Id</th>
+            <th scope="col">Flight-code</th>
+            <th scope="col">Departure</th>
+            <th scope="col">Arrival</th>
+            <th scope="col">duration</th>
+            <th scope="col">Services</th>
+            <th scope="col">Passengers</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let flight of flights; let i=index">
+
+            <td>{{ flight['id'] }}</td>
+            <td>{{ flight['flightCode'] }}</td>
+            <td>{{ flight['departureStation'] }}</td>
+            <td>{{ flight['arrivalStation'] }}</td>
+            <td>{{ flight['Duration'] }}</td>
+            <td>
+                <a class="button" routerLink="/admin/flightservices/{{ flight.flightNumber }}" mat-raised-button
+                    color="primary">Manage Services</a>
+            </td>
+            <td>
+                <a class="button" routerLink="/admin/passengers/{{ flight.flightNumber }}" mat-raised-button
+                    color="primary">Manage passengers</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<router-outlet></router-outlet>

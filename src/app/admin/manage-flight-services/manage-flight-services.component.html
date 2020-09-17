@@ -1,0 +1,245 @@
+<!-- Ancillary Services -->
+<h1 class="header">
+    Ancillary Services
+</h1>
+
+<a class="button" mat-raised-button color="warn" href="javascript:history.back()">
+    <mat-icon>keyboard_backspace</mat-icon> Back
+</a>
+
+<div class="row">
+    <div class="add">
+        <button mat-raised-button class="input-add" color="accent" (click)="openDialog()">
+            Add Ancillary
+        </button>
+
+    </div>
+
+    <div class="mat-elevation-z8">
+        <table mat-table [dataSource]="dataSource" matSort>
+            <ng-container matColumnDef="Ancillary">
+                <th mat-header-cell *matHeaderCellDef>Ancillary Services</th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="Edit">
+                <th mat-header-cell *matHeaderCellDef mat-sort-headerclass="edit-update-btn">
+                    Edit
+                </th>
+                <td mat-cell *matCellDef="let element">
+                    <button mat-raised-button class="input-add" (click)="openUpdateDialog(element)">
+                        <mat-icon>edit</mat-icon>
+                    </button>
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="Delete">
+                <th mat-header-cell *matHeaderCellDef mat-sort-headerclass="delete-update-btn">
+                    Delete
+                </th>
+                <td mat-cell *matCellDef="let element">
+                    <button mat-raised-button class="input-add" (click)="deleteAncillary(element)">
+                        <mat-icon>delete</mat-icon>
+                    </button>
+                </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="columnsToDisplayAncillary"></tr>
+            <tr mat-row *matRowDef="let row; columns: columnsToDisplayAncillary"></tr>
+        </table>
+    </div>
+</div>
+
+<!-- Ancillary Services - Add -->
+
+<ng-template #addAncillary>
+    <h1 mat-dialog-title>Add Ancillary Services</h1>
+    <div mat-dialog-content>
+        <mat-form-field appearance="fill">
+            <input matInput #ancillary value="" />
+        </mat-form-field>
+        <button mat-stroked-button class="input-add" type="submit" (click)="addAncillaryServices(ancillary.value)">
+            Add
+        </button>
+    </div>
+</ng-template>
+
+<!-- Ancillary Services - Update -->
+
+<ng-template #updateAncillary>
+    <h1 mat-dialog-title>Edit Ancillary Services</h1>
+    <div mat-dialog-content>
+        <mat-form-field appearance="fill">
+            <input matInput #ancillary [(ngModel)]="currentAncillary" />
+        </mat-form-field>
+        <button mat-stroked-button class="input-add" type="submit" (click)="updateAncillaryServices()">
+            Update
+        </button>
+    </div>
+</ng-template>
+
+<!-- Special Meals -->
+<br />
+<h1 class="header">
+    Special Meals
+</h1>
+
+<div class="row">
+    <div class="add">
+        <button class="add" mat-stroked-button class="input-add" color="accent" (click)="openMealDialog()">
+            Add Special Meals
+        </button>
+    </div>
+
+    <div class="mat-elevation-z8">
+        <table mat-table [dataSource]="mealSource" matSort>
+            <ng-container matColumnDef="Special Meals">
+                <th mat-header-cell *matHeaderCellDef>Special Meals</th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="Edit">
+                <th mat-header-cell *matHeaderCellDef mat-sort-headerclass="edit-update-btn">
+                    Edit
+                </th>
+                <td mat-cell *matCellDef="let element">
+                    <button mat-raised-button class="input-add" color="violet" (click)="openUpdateMealialog(element)">
+                        <mat-icon>edit</mat-icon>
+                    </button>
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="Delete">
+                <th mat-header-cell *matHeaderCellDef mat-sort-headerclass="delete-update-btn">
+                    Delete
+                </th>
+                <td mat-cell *matCellDef="let element">
+                    <button mat-raised-button class="input-add" (click)="deleteMeals(element)">
+                        <mat-icon>delete</mat-icon>
+                    </button>
+                </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumnsMeals"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumnsMeals"></tr>
+        </table>
+    </div>
+</div>
+
+<!-- Special Meals - Add -->
+
+<ng-template #addSpecialMeals>
+    <h1 mat-dialog-title>Add Special Meals</h1>
+    <div mat-dialog-content>
+        <mat-form-field appearance="fill">
+            <input matInput #special value="" />
+        </mat-form-field>
+        <button mat-stroked-button color="primary" class="input-add" type="submit"
+            (click)="addSpeciaMeals(special.value)">
+            Add
+        </button>
+    </div>
+</ng-template>
+
+<!-- Special Meals  - Update -->
+
+<ng-template #updateMeals>
+    <h1 mat-dialog-title>Edit Special Meals</h1>
+    <div mat-dialog-content>
+        <mat-form-field appearance="fill">
+            <input matInput #special [(ngModel)]="currentMeals" />
+        </mat-form-field>
+        <button mat-stroked-button color="primary" type="submit" (click)="updateSpecialMeals()">
+            Update
+        </button>
+    </div>
+</ng-template>
+
+
+<!-- Shopping Items -->
+<br />
+<h1 class="header">
+    Shopping Items
+</h1>
+
+<div class="row">
+    <div class="add">
+        <button class="add" mat-raised-button class="input-add" (click)="openShoppingDialog()">
+            Add Shopping Items
+        </button>
+    </div>
+
+    <div class="mat-elevation-z8">
+        <table mat-table [dataSource]="shoppingSource" matSort>
+            <ng-container matColumnDef="Shopping Items">
+                <th mat-header-cell *matHeaderCellDef>Shopping Items</th>
+                <td mat-cell *matCellDef="let element">
+                    {{ element }}
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="Edit">
+                <th mat-header-cell *matHeaderCellDef mat-sort-headerclass="edit-update-btn">
+                    Edit
+                </th>
+                <td mat-cell *matCellDef="let element">
+                    <button mat-raised-button color="violet" class="input-add"
+                        (click)="openUpdateShoppingDialog(element)">
+                        <mat-icon>edit</mat-icon>
+                    </button>
+                </td>
+            </ng-container>
+
+            <ng-container matColumnDef="Delete">
+                <th mat-header-cell *matHeaderCellDef mat-sort-headerclass="delete-update-btn">
+                    Delete
+                </th>
+                <td mat-cell *matCellDef="let element">
+                    <button mat-raised-button color="violet" class="input-add" (click)="deleteItem(element)">
+                        <mat-icon>delete</mat-icon>
+                    </button>
+                </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumnsShopping"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumnsShopping"></tr>
+        </table>
+    </div>
+</div>
+
+<!-- Shopping Items - Add -->
+
+<ng-template #addShoppingItems>
+    <h1 mat-dialog-title>Add Shopping Items</h1>
+    <div mat-dialog-content>
+        <mat-form-field appearance="fill">
+            <input matInput #shopping value="" />
+        </mat-form-field>
+        <button mat-stroked-button color="primary" class="input-add" type="submit"
+            (click)="addShopItem(shopping.value)">
+            Add
+        </button>
+    </div>
+</ng-template>
+
+<!-- Shopping Items - Update -->
+
+<ng-template #updateShopping>
+    <h1 mat-dialog-title>Edit Shopping Items</h1>
+    <div mat-dialog-content>
+        <mat-form-field appearance="fill">
+            <input matInput #shopping [(ngModel)]="currentItem" />
+        </mat-form-field>
+        <button mat-stroked-button color="primary" class="input-add" type="submit" (click)="updateShoppingItems()">
+            Update
+        </button>
+    </div>
+</ng-template>
+
+
+
+<router-outlet></router-outlet>
